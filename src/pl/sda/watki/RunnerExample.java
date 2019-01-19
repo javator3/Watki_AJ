@@ -16,7 +16,7 @@ public class RunnerExample extends  Thread {
 
 
 
-            System.out.println("liczba: " + i + "wynik" +i*2+ " thread: " + Thread.currentThread().getName());
+            System.out.println("liczba: " + i + "wynik: " +i*2+ " thread: " + Thread.currentThread().getName());
 
             try {
                 Thread.sleep(10);

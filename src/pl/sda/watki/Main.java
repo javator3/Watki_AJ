@@ -30,10 +30,10 @@ public class Main {
    //     thread.start();
    //     thread1.start();
 
-        RunnerExample runnerExample = new RunnerExample();
-        RunnerExample runnerExample1 = new RunnerExample();
-        runnerExample.start();
-        runnerExample1.start();
+     //   RunnerExample runnerExample = new RunnerExample();
+     //   RunnerExample runnerExample1 = new RunnerExample();
+     //   runnerExample.start();
+     //   runnerExample1.start();
 
 
 
