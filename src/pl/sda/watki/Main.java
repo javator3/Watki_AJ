@@ -12,7 +12,6 @@ class Runner implements  Runnable{
     public void run() {
 
         for(int i=0; i<500;i++){
-            System.out.println("Hello: " + " thread: " + Thread.currentThread().getName());
 
         silnia(i);
             try {
@@ -26,9 +25,24 @@ class Runner implements  Runnable{
 public class Main {
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new Runner());
-        Thread thread1 = new Thread(new Runner());
-        thread.start();
-        thread1.start();
+  //      Thread thread = new Thread(new Runner());
+   //     Thread thread1 = new Thread(new Runner());
+   //     thread.start();
+   //     thread1.start();
+
+        RunnerExample runnerExample = new RunnerExample();
+        RunnerExample runnerExample1 = new RunnerExample();
+        runnerExample.start();
+        runnerExample1.start();
+
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i=0; i<10;i++){
+                }
+            }
+        });
+                thread.start();
     }
 }
