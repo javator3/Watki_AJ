@@ -42,5 +42,18 @@ class ThreadSend extends Thread {
 
             threadSend.start();
             threadSend1.start();
+
+            try {
+                threadSend.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            try {
+                threadSend1.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            System.out.println("Koniec ....");
         }
     }
